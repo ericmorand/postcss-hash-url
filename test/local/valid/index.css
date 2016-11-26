@@ -1,0 +1,11 @@
+.test-with-single-quote {
+    background: url('../../assets/dummy.png');
+}
+
+.test-with-double-quote {
+    background: url("../../assets/dummy.png");
+}
+
+.test-with-no-quote {
+    background: url(../../assets/dummy.png);
+}

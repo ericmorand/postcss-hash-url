@@ -1,0 +1,11 @@
+.test-with-single-quote {
+    background: url("assets/5c15ac9d8ae999117df0e85552214e100114c24157fc882e5ea943cba1e3d91e.png");
+}
+
+.test-with-double-quote {
+    background: url("assets/5c15ac9d8ae999117df0e85552214e100114c24157fc882e5ea943cba1e3d91e.png");
+}
+
+.test-with-no-quote {
+    background: url("assets/5c15ac9d8ae999117df0e85552214e100114c24157fc882e5ea943cba1e3d91e.png");
+}

@@ -1,0 +1,32 @@
+{
+  "name": "postcss-hash-url",
+  "version": "0.1.0",
+  "keywords": [
+    "assets",
+    "css",
+    "hash",
+    "postcss",
+    "postcss-plugin",
+    "url"
+  ],
+  "description": "PostCSS plugin to convert URLs to hash",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "tap test/*.js --cov"
+  },
+  "author": "Eric MORAND",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "postcss": "^5.2.6",
+    "tap": "^8.0.1"
+  },
+  "dependencies": {
+    "fs-extra": "^1.0.0",
+    "postcss": "^5.2.6",
+    "postcss-functions": "^2.1.1",
+    "promise": "^7.1.1",
+    "quote": "^0.4.0",
+    "sha.js": "^2.4.8",
+    "unquote": "^1.1.0"
+  }
+}

@@ -1,0 +1,11 @@
+.test-with-http-protocol {
+    background: url("http://dummy.com/dummy.png");
+}
+
+.test-with-https-protocol {
+    background: url("https://dummy.com/dummy.png");
+}
+
+.test-without-protocol {
+    background: url("//dummy.com/dummy.png");
+}
