@@ -8,15 +8,17 @@ function process(css, options, postcssOptions) {
   return postcss().use(plugin(options)).process(css, postcssOptions);
 }
 
+var options = {
+  destPath: path.resolve('/tmp'),
+  assetsPath: 'assets'
+};
+
 test('valid local URL', function (t) {
   t.plan(2);
 
   var css = fs.readFileSync(path.resolve('./test/local/valid/index.css'));
-  var options = {
-    basePath: path.resolve('./test/local/valid'),
-    destPath: path.resolve('./tmp'),
-    assetsPath: 'assets'
-  };
+
+  options.basePath = path.resolve('./test/local/valid');
 
   return process(css, options).then(
     function(result) {
@@ -44,11 +46,8 @@ test('invalid local URL', function (t) {
   t.plan(2);
 
   var css = fs.readFileSync(path.resolve('./test/local/invalid/index.css'));
-  var options = {
-    basePath: path.resolve('./test/local/invalid'),
-    destPath: path.resolve('./tmp'),
-    assetsPath: 'assets'
-  };
+
+  options.basePath = path.resolve('./test/local/invalid');
 
   return process(css, options).then(
     function(result) {

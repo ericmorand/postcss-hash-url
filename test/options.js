@@ -10,7 +10,7 @@ function process(css, options, postcssOptions) {
 
 var options = {
   basePath: path.resolve('./test/local/valid'),
-  destPath: path.resolve('./tmp'),
+  destPath: '/tmp',
   assetsPath: 'assets',
   sha: 'sha256'
 };
